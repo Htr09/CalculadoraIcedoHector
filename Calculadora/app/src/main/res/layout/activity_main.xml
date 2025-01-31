@@ -8,12 +8,18 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/resultado"
-        android:layout_width="400dp"
+        android:id="@+id/txtPantalla"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="5dp"
+        android:background="@drawable/border_bag"
+        android:gravity="end|bottom"
+        android:textSize="36sp"
+        android:padding="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +95,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
-        android:text="<-"
+        android:text="⌫"
         app:layout_constraintEnd_toStartOf="@+id/btnTotal"
         app:layout_constraintTop_toBottomOf="@+id/btnTres" />
 
@@ -142,10 +148,10 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="55dp"
         android:text="AC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPantalla" />
 
     <Button
         android:id="@+id/btnCinco"
@@ -161,11 +167,11 @@
         android:id="@+id/btnDividir"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="55dp"
         android:layout_marginEnd="60dp"
         android:text="÷"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPantalla" />
 
     <Button
         android:id="@+id/btnPunto"
